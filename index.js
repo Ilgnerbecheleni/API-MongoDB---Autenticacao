@@ -29,7 +29,9 @@ try {
 }
 
 
-
+app.get('/',(req,res)=>{
+  res.status(200).send({message:"API OK"})
+})
 
 app.listen(port, () => {
   console.log(`Server rodando na porta ${port}`)
